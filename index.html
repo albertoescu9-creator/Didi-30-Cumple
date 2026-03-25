@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú principal</title>
+  <style>
+    :root {
+      --bg: #111111;
+      --card: #1c1c1c;
+      --text: #f5f5f5;
+      --muted: #bdbdbd;
+      --accent: #ffcc00;
+      --accent-hover: #ffd633;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 100%);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 760px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #2a2a2a;
+      border-radius: 20px;
+      padding: 40px 28px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+
+    .menu-label {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 46px);
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 540px;
+      margin: 0 auto 28px;
+    }
+
+    .button-wrap {
+      margin-top: 12px;
+    }
+
+    .main-button {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--accent);
+      color: #111111;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 16px 28px;
+      border-radius: 999px;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .main-button:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    .file-note {
+      margin-top: 18px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    code {
+      background: #0f0f0f;
+      border: 1px solid #2b2b2b;
+      padding: 2px 8px;
+      border-radius: 8px;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <div class="menu-label">Menú</div>
+      <h1>Cumple 30 DIDI, Estas listo tontito?)</h1>
+      <p>
+        Haz clic abajo para abrir la experiencia.
+      </p>
+
+      <div class="button-wrap">
+        <a class="main-button" href="./didi_escape_room.html">
+          Abrir didi_escape_room
+        </a>
+      </div>
+
+      <div class="file-note">
+        El archivo enlazado debe llamarse <code>didi_escape_room.html</code>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
